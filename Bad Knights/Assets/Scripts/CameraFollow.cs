@@ -40,6 +40,18 @@ public class CameraFollow : MonoBehaviour
 			Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
 		}
 
-	}
+
+    }
+
+
+    public void SetMinCamPosition()
+    {
+        minCameraPos = gameObject.transform.position;
+    }
+
+    public void SetMaxCamPosition()
+    {
+        maxCameraPos = gameObject.transform.position;
+    }
 
 }
